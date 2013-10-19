@@ -1,0 +1,41 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+    %title Starter Template for Bootstrap
+    / Bootstrap core CSS
+    %link{href: "/bootstrap/css/bootstrap.css", rel: "stylesheet"}
+    / Custom styles for this template
+    %link{href: "/css/style.css", rel: "stylesheet"}
+    / HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    /[if lt IE 9]
+      <script src="/bootstrap/js/html5shiv.js"></script>
+      <script src="/bootstrap/js/respond.min.js"></script>
+  %body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", type: "button"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.navbar-brand{href: "#"} Project name
+        .collapse.navbar-collapse
+          %ul.nav.navbar-nav
+            %li.active
+              %a{href: "#"} Home
+            %li
+              %a{href: "#about"} About
+            %li
+              %a{href: "#contact"} Contact
+        / /.nav-collapse
+    .container
+      = yield
+    / /.container
+    /
+      Bootstrap core JavaScript
+      \==================================================
+    / Placed at the end of the document so the pages load faster
+    %script{src: "//code.jquery.com/jquery-1.10.1.min.js"}
+    %script{src: "/bootstrap/js/bootstrap.min.js"}

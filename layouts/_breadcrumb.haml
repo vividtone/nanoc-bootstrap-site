@@ -1,0 +1,7 @@
+.row
+  - unless item.path == '/'
+    %ul{class: 'breadcrumb'}
+      - breadcrumbs_trail.compact[0..-2].each do |page|
+        - next if page[:title].to_s.empty?
+        %li= link_to(page[:title], page)
+      %li{class: 'active'} #{item[:title]}
