@@ -8,6 +8,7 @@ gem 'haml'
 gem 'less'
 gem 'kramdown'
 gem 'RedCloth'
+gem 'builder'
 
 gem 'guard'
 gem 'guard-nanoc'

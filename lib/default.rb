@@ -3,3 +3,5 @@
 include Nanoc::Helpers::Breadcrumbs
 include Nanoc::Helpers::LinkTo
 include Nanoc::Helpers::Rendering
+include Nanoc3::Helpers::Blogging
+include Nanoc3::Helpers::XMLSitemap
